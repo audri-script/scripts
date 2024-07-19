@@ -44,7 +44,7 @@ while True:
     preco = obter_preco()
     if nome and preco:
         print(f"Ativo: {nome} - Preço do Bitcoin: {preco}")
-        # Salvar o nome e o preço em um arquivo CSV
+        # salvar em um arquivo CSV
         with open("precos_bitcoin.csv", mode="a", newline='') as file:
             writer = csv.writer(file)
             writer.writerow([time.strftime("%Y-%m-%d %H:%M:%S"), nome, preco])
